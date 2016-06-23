@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SocketAsyncEventArgsLib</name>
+    </assembly>
+    <members>
+        <member name="T:SocketAsyncEventArgsLib.SessionBase">
+            <summary>
+            The base class for the session class, holding the default data.
+            </summary>
+        </member>
+        <member name="M:SocketAsyncEventArgsLib.SessionBase.OnConnectionClose">
+            <summary>
+            Function to be called when the connection is closed. Can be overridden.
+            </summary>
+        </member>
+        <member name="P:SocketAsyncEventArgsLib.SessionBase.Socket">
+            <summary>
+            The underlying <see cref="P:SocketAsyncEventArgsLib.SessionBase.Socket"/> class of the session.
+            </summary>
+        </member>
+        <member name="T:SocketAsyncEventArgsLib.SocketReceivedEventArgs`1">
+            <summary>
+            Provides data from a receive event where a session receives data from the client.
+            </summary>
+            <typeparam name="T">The session class.</typeparam>
+        </member>
+        <member name="P:SocketAsyncEventArgsLib.SocketReceivedEventArgs`1.Session">
+            <summary>
+            The session who received data.
+            </summary>
+        </member>
+        <member name="P:SocketAsyncEventArgsLib.SocketReceivedEventArgs`1.Data">
+            <summary>
+            The data received from the client.
+            </summary>
+        </member>
+        <member name="P:SocketAsyncEventArgsLib.SocketReceivedEventArgs`1.BytesReceived">
+            <summary>
+            The amount of bytes received from the client.
+            </summary>
+        </member>
+        <member name="T:SocketAsyncEventArgsLib.SocketSentEventArgs`1">
+            <summary>
+            Provides data from a send event where a session sends data to the client.
+            </summary>
+            <typeparam name="T">The session class.</typeparam>
+        </member>
+        <member name="P:SocketAsyncEventArgsLib.SocketSentEventArgs`1.Session">
+            <summary>
+            The session who sends data.
+            </summary>
+        </member>
+        <member name="P:SocketAsyncEventArgsLib.SocketSentEventArgs`1.Data">
+            <summary>
+            The data sent to the client.
+            </summary>
+        </member>
+        <member name="P:SocketAsyncEventArgsLib.SocketSentEventArgs`1.BytesSent">
+            <summary>
+            The amount of bytes sent to the client.
+            </summary>
+        </member>
+        <member name="T:SocketAsyncEventArgsLib.SocketSystem`1">
+            <summary>
+            Represents a stable SocketAsyncEventArgs socket system.
+            </summary>
+            <typeparam name="T">A session class inheriting the <see cref="T:SocketAsyncEventArgsLib.SessionBase"/> class.</typeparam>
+        </member>
+        <member name="M:SocketAsyncEventArgsLib.SocketSystem`1.#ctor(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new instance of the SocketSystem class and starts the socket.
+            </summary>
+            <param name="ip">The IP of the socket, use 0.0.0.0 for all IPs and 127.0.0.1 for only localhost.</param>
+            <param name="port">The port of the socket.</param>
+            <param name="backlog">The backlog; 'maximum amount of connections' in the queue which aren't accepted yet.</param>
+            <param name="supportedAmount">The maximum amount of connections.</param>
+        </member>
+        <member name="M:SocketAsyncEventArgsLib.SocketSystem`1.SendBytes(`0,System.Byte[])">
+            <summary>
+            Attempts to send data to the client of a connection.
+            </summary>
+            <param name="session">The session sending data.</param>
+            <param name="bytes">The data to be sent.</param>
+        </member>
+        <member name="E:SocketAsyncEventArgsLib.SocketSystem`1.ConnectionAccepted">
+            <summary>
+            Occurs when a connection is accepted.
+            </summary>
+        </member>
+        <member name="E:SocketAsyncEventArgsLib.SocketSystem`1.DataReceived">
+            <summary>
+            Occurs when a connection receives data from the client.
+            </summary>
+        </member>
+        <member name="E:SocketAsyncEventArgsLib.SocketSystem`1.DataSent">
+            <summary>
+            Occurs when a connection sent data to the client.
+            </summary>
+        </member>
+        <member name="P:SocketAsyncEventArgsLib.SocketSystem`1.Socket">
+            <summary>
+            The <see cref="P:SocketAsyncEventArgsLib.SocketSystem`1.Socket"/> class of the connection.
+            </summary>
+        </member>
+    </members>
+</doc>

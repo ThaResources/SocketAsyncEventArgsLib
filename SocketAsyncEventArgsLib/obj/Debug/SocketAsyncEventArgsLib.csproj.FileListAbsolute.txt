@@ -1,0 +1,8 @@
+c:\users\josh\documents\visual studio 2013\Projects\SocketAsyncEventArgsLib\bin\Debug\SocketAsyncEventArgsLib.dll
+c:\users\josh\documents\visual studio 2013\Projects\SocketAsyncEventArgsLib\bin\Debug\SocketAsyncEventArgsLib.pdb
+c:\users\josh\documents\visual studio 2013\Projects\SocketAsyncEventArgsLib\obj\Debug\SocketAsyncEventArgsLib.csprojResolveAssemblyReference.cache
+c:\users\josh\documents\visual studio 2013\Projects\SocketAsyncEventArgsLib\obj\Debug\SocketAsyncEventArgsLib.dll
+c:\users\josh\documents\visual studio 2013\Projects\SocketAsyncEventArgsLib\obj\Debug\SocketAsyncEventArgsLib.pdb
+C:\Users\Josh\documents\visual studio 2013\Projects\SocketAsyncEventArgsLib\bin\Debug\SocketAsyncEventArgsLib.XML
+C:\Users\Josh\documents\visual studio 2013\Projects\SocketAsyncEventArgsLib\bin\Debug\HabboEncryption.dll
+C:\Users\Josh\documents\visual studio 2013\Projects\SocketAsyncEventArgsLib\bin\Debug\HabboEncryption.pdb
